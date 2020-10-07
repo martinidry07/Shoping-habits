@@ -1,0 +1,221 @@
+body {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  grid-template-rows: 50fr 50fr;
+  background-image: url("money.jpg");
+  color: gold;
+  font-family: bold;
+}
+.button {
+  color: green;
+  background-color: greenyellow;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: tomato;
+}
+.button hoover {
+  color: red;
+  background-color: rgb(87, 137, 12);
+}
+
+.frame {
+  margin: 2px;
+  padding: 1% 3% 3% 3%;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.checksFrame {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.groupsFrame {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.shopsFrame {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.goodsFrame {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.topButtons {
+  display: none;
+  border-radius: 10px;
+}
+.buttonsBlock {
+  display: inline;
+}
+
+.bl_button {
+  float: right;
+  margin: 3px;
+}
+.cheksPlace {
+  width: 90%;
+  max-width: 400px;
+  padding: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 30fr 50fr 30fr;
+}
+.groupsPlace {
+  width: 90%;
+  padding: 0px 20px 0px 20px;
+  display: grid;
+}
+.idDIVtitle {
+  grid-template-columns: 100px 50fr 50fr 50px;
+}
+.idDIVgr1 {
+  grid-template-columns: 100px 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 10fr 50px;
+}
+.shopsPlace {
+  width: 90%;
+  max-width: 400px;
+  padding: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 100fr 50fr;
+}
+.goodsPlace {
+  width: 90%;
+  max-width: 400px;
+  padding: 0px 20px 0px 20px;
+  display: grid;
+  grid-template-columns: 100fr 50fr;
+}
+.idDIVinput {
+  width: 90%;
+  max-width: 400px;
+  padding: 0px 20px 0px 20px;
+  display: none; /*inline-block;*/
+}
+.poz {
+  margin: 0 5px;
+}
+.p1l {
+  grid-column-start: 1;
+  margin-right: 5px;
+}
+.p2l {
+  grid-column-start: 2;
+  margin-right: 5px;
+}
+.p3l {
+  grid-column-start: 3;
+  margin-right: 5px;
+}
+.p4l {
+  grid-column-start: 4;
+  margin: 0 5px;
+}
+.idMTgr1 {
+  grid-column-start: 23;
+  margin-right: 5px;
+}
+.idMDgr1 {
+  grid-column-start: 2;
+  grid-column-end: 11;
+  background-color: red;
+}
+.idBgr1 {
+  grid-column-start: 11;
+  grid-column-end: 23;
+  background-color: white;
+  margin-right: 5px;
+}
+.idMDgr2 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  background-color: red;
+}
+.idBgr2 {
+  grid-column-start: 7;
+  grid-column-end: 23;
+  background-color: white;
+  margin-right: 5px;
+}
+.idMDgr3 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  background-color: red;
+}
+.idBgr3 {
+  grid-column-start: 7;
+  grid-column-end: 23;
+  background-color: white;
+  margin-right: 5px;
+}
+.idMDgr4 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: red;
+}
+.idBgr4 {
+  grid-column-start: 5;
+  grid-column-end: 23;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.inputForm {
+  position: absolute;
+  display: block;
+  background-color: yellowgreen;
+  border: 1px black solid;
+  top: 100px;
+  left: 50px;
+  padding: 10px;
+  width: auto;
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    position: relative;
+    display: block;
+    justify-content: center;
+  }
+  .checksFrame {
+    margin-top: 50px;
+  }
+  .topButtons {
+    position: fixed;
+    display: block;
+    padding: 10px 30px 5px 30px;
+    left: 10px;
+    top: 1px;
+
+    border: 3px solid yellow;
+    margin-bottom: 1px;
+  }
+  .tLink {
+    text-decoration: none;
+  }
+  .top_button {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .checksFrame {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  body {
+    margin-top: 0;
+  }
+  .checksFrame {
+    margin-top: 100px;
+  }
+}

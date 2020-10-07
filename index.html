@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shoping habits</title>
+    <meta charset="UTF-8" />
+    <style box-sizing: border-box;></style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topButtons">
+      <button class="button top_button">
+        <a class="tLink" href="#Cheks">Cheks</a>
+      </button>
+      <button class="button top_button">
+        <a class="tLink" href="#Groups">Groups</a>
+      </button>
+      <button class="button top_button">
+        <a class="tLink" href="#Sellers">Sellers/Providers</a>
+      </button>
+      <button class="button top_button">
+        <a class="tLink" href="#Goods">Goods/Services</a>
+      </button>
+    </div>
+    <div id="Checks" class="frame checksFrame">
+      <div class="buttonsBlock">
+        <button class="button bl_button">Restore</button>
+        <button class="button bl_button">Delete</button>
+        <button class="button bl_button">Edit</button>
+        <button class="button bl_button">Open</button>
+        <button class="button bl_button">Add</button>
+      </div>
+      <div rolle="button" class="cheksPlace">
+        <p class="p1l poz title">Date</p>
+        <p class="p2l poz title">Seller/Provider</p>
+        <p class="p3l poz title">Totall</p>
+      </div>
+      <div rolle="button" class="cheksPlace el">
+        <p class="p1l el poz">01.10.20</p>
+        <p class="p2l el poz">Rimi</p>
+        <p class="p3l el poz">25.80</p>
+      </div>
+      <div rolle="button" class="cheksPlace el">
+        <p class="p1l el poz">03.10.20</p>
+        <p class="p2l el poz">Cinema Forum</p>
+        <p class="p3l el poz">15.00</p>
+      </div>
+      <div rolle="button" class="cheksPlace el">
+        <p class="p1l el poz">04.10.20</p>
+        <p class="p2l el poz">Namu pārvaldnieks</p>
+        <p class="p3l el poz">90.00</p>
+      </div>
+      <div rolle="button" class="cheksPlace el">
+        <p class="p1l el poz">06.10.20</p>
+        <p class="p2l el poz">Maxima</p>
+        <p class="p3l el poz">26.30</p>
+      </div>
+      <div rolle="button" class="cheksPlace el">
+        <p class="p1l el poz">07.10.20</p>
+        <p class="p2l el poz">Neste</p>
+        <p class="p3l el poz">52.11</p>
+      </div>
+    </div>
+
+    <div id="Groups" class="frame groupsFrame">
+      <div class="buttonsBlock">
+        <button class="button bl_button restbut">Restore</button>
+        <button class="button bl_button delbut">Delete</button>
+        <button class="button bl_button editbut">Edit</button>
+        <button class="button bl_button openbut">Open</button>
+        <button class="button bl_button addbut">Add</button>
+      </div>
+      <div class="groupsPlace idDIVinput">
+        <form>
+          <div class="form-group">
+            <label for="groupsInput1">Input Group name</label>
+            <input
+              type="text"
+              class="form-control p1l"
+              id="InputGroupName"
+              placeholder="Group name"
+              value="" 
+              onkeypress="javascript:this.setAttribute('value', this.value);"
+            />
+            <button class="addGroup p4l">Add</button>
+          </div>
+        </form>
+      </div>
+        <div rolle="button" class="groupsPlace idDIVtitle">
+          <p class="p1l poz idGgrtitle">Group</p>
+          <p class="p4l idMTgrtitle">Totall</p>
+        </div>
+      <div rolle="button" class="groupsPlace idDIVgr1">
+        <p class="p1l poz el idGgr1">Comunal</p>
+        <div class="many el idMDgr1"></div>
+        <div class="balanss el idBgr1"></div>
+        <p class="poz el idMTgr1">90.00</p>
+      </div>
+      <div rolle="button" class="groupsPlace idDIVgr1">
+        <p class="p1l poz el idGgr1">Food</p>
+        <div class="many el idMDgr2"></div>
+        <div class="balanss el idBgr2"></div>
+        <p class="poz el idMTgr1">52.10</p>
+      </div>
+      <div rolle="button" class="groupsPlace idDIVgr1">
+        <p class="p1l poz el idGgr1">Transport</p>
+        <div class="many el idMDgr3"></div>
+        <div class="balanss el idBgr3"></div>
+        <p class="poz el idMTgr1">52.11</p>
+      </div>
+      <div rolle="button" class="groupsPlace idDIVgr1">
+        <p class="p1l poz el idGgr1">Entertainment</p>
+        <div class="many el idMDgr4"></div>
+        <div class="balanss el idBgr4"></div>
+        <p class="poz el idMTgr1">15.00</p>
+      </div>
+    </div>
+    <div id="Sellers" class="frame shopsFrame">
+      <div class="buttonsBlock">
+        <button class="button bl_button">Delete</button>
+        <button class="button bl_button">Edit</button>
+        <button class="button bl_button">Open</button>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz title">Seller/Provider</p>
+        <p class="p2l poz title">Totall</p>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz el">Rimi</p>
+        <p class="p2l poz el">25.80</p>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz el">Cinema Forum</p>
+        <p class="p2l poz el">15.00</p>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz el">Namu pārvaldnieks</p>
+        <p class="p2l poz el">90.00</p>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz el">Maxima</p>
+        <p class="p2l poz el">26.30</p>
+      </div>
+      <div rolle="button" class="shopsPlace">
+        <p class="p1l poz el">Neste</p>
+        <p class="p2l poz el">52.11</p>
+      </div>
+    </div>
+    <div id="Goods" class="frame goodsFrame">
+      <div class="buttonsBlock">
+        <button class="button bl_button">Delete</button>
+        <button class="button bl_button">Edit</button>
+        <button class="button bl_button">Open</button>
+      </div>
+      <div rolle="button" class="goodsPlace">
+        <p class="p1l poz title">Goods/Services</p>
+        <p class="p2l poz title">Totall</p>
+      </div>
+      <div rolle="button" class="goodsPlace">
+        <p class="p1l poz el">food</p>
+        <p class="p2l poz el">52.10</p>
+      </div>
+      <div rolle="button" class="goodsPlace">
+        <p class="p1l poz el">rent</p>
+        <p class="p2l poz el">90</p>
+      </div>
+      <div rolle="button" class="goodsPlace">
+        <p class="p1l poz el">fuel</p>
+        <p class="p2l poz el">52.11</p>
+      </div>
+      <div rolle="button" class="goodsPlace">
+        <p class="p1l poz el">cinema</p>
+        <p class="p2l poz el">15.00</p>
+      </div>
+    </div>
+    <div class="inputForm">
+      <form>
+        <div class="form-group">
+          <label for="groupsInputDate">Date</label>
+          <input type="date" class="form-control" id="InputDate" />
+        </div>
+        <div class="form-group">
+          <label for="groupsInput1">Seller/Provider</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Input1"
+            placeholder="Seller/Provider"
+          />
+          <select class="form-control" id="shopList">
+            <option class="op idSHop1"></option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gropsListSelect1">Group</label>
+          <select class="form-control" id="gropsList">
+            <option class="op idGRpo1"></option>
+            <option class="op idGRpo2">1</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label for="groupsInput2">Goods/Services</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Input2"
+              placeholder="Goods/Services"
+            />
+            <select class="form-control" id="goodsList">
+              <option class="op idGOop1"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="groupsPrice">Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                placeholder="Price"
+              />
+            </div>
+        </div>
+      </form>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
